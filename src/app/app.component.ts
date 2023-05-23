@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { CartService } from './service/cart.service';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'route-app';
+
+    constructor(public cartService:CartService){
+
+    }
 }
