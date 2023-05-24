@@ -10,6 +10,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { BookDetailsComponent } from './product/book-details/book-details.component';
 import { CartViewComponent } from './product/cart-view/cart-view.component';
+import { RegisterComponent } from './auth/register/register.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -19,12 +21,15 @@ import { CartViewComponent } from './product/cart-view/cart-view.component';
     ProductListComponent,
     NotFoundComponent,
     BookDetailsComponent,
-    CartViewComponent
+    CartViewComponent,
+    RegisterComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
